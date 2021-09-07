@@ -62,4 +62,30 @@ select firstname,City
 	from AddressBookTable
 	order by city ASC
 
-	select * from AddressBookTable
+	--UC9
+
+	Insert into AddressBookTable values('sush','Ma','ap','nar','nas',332001,9876543212,'sush@gmail.com') 
+Insert into AddressBookTable values('Bhanu','bb','am','al','mal',153732,9987654321,'banu@gmail.com') 
+Insert into AddressBookTable values('Akil','ll','al','ma','Maa',786343,1234567890,'akil@gmail.com')
+Insert into AddressBookTable values('Raju','la','ffs','fs','nh',438652,1234567876,'raju@gmail.com')
+ALTER TABLE AddressBookTable ADD 
+AdressBookName varchar(50),AbType varchar(20);
+
+ALTER TABLE AddressBookTable ADD 
+AdressBookName varchar(50) 
+
+UPDATE  AddressBookTable SET
+AdressBookName='FamilyAddressBook' , AbType = 'Family' 
+WHERE
+FirstName ='bhagi' or FirstName='lalli'
+
+UPDATE  AddressBookTable SET
+AdressBookName='FriendAddressBook' , AbType = 'Friend' 
+WHERE
+FirstName ='Satya' or FirstName='Rushi'
+select * from AddressBookTable 
+
+UPDATE  AddressBookTable SET
+AdressBookName='ProfessionAddressBook' , AbType = 'Profession' 
+WHERE      
+FirstName ='Rupa' or FirstName='Kesu'
