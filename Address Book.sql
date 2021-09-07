@@ -30,3 +30,8 @@ select * from AddressBookTable
 update AddressBookTable 
 	set phonenumber = '9123456780' 
 	where FirstName = 'latha' 
+
+	--UC5
+    delete from AddressBookTable 
+	where FirstName = 'Manu'
+	use AddressBookService
