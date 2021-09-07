@@ -89,3 +89,8 @@ UPDATE  AddressBookTable SET
 AdressBookName='ProfessionAddressBook' , AbType = 'Profession' 
 WHERE      
 FirstName ='Rupa' or FirstName='Kesu'
+
+--UC10
+
+Select count(*)as CountAbType, AbType  from AddressBookTable group by AbType
+Select count(*)as CountAbNames, AdressBookName  from AddressBookTable group by AdressBookName
