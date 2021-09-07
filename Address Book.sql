@@ -94,3 +94,8 @@ FirstName ='Rupa' or FirstName='Kesu'
 
 Select count(*)as CountAbType, AbType  from AddressBookTable group by AbType
 Select count(*)as CountAbNames, AdressBookName  from AddressBookTable group by AdressBookName
+
+--UC11
+Insert into AddressBookTable values ('Anu','s','fd','nar','ta',876432,0987654321,'anu@gmail.com','Family','FamilyAddressBook' )
+select * from AddressBookTable
+
