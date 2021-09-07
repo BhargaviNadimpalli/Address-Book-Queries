@@ -34,4 +34,10 @@ update AddressBookTable
 	--UC5
     delete from AddressBookTable 
 	where FirstName = 'Manu'
-	use AddressBookService
+	
+
+	--UC6
+    select Firstname, CIty, State 
+	from AddressBookTable
+	where City = 'Mlk' 
+	OR State = 'aL'
