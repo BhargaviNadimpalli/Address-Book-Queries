@@ -1,7 +1,7 @@
 -- Welcome To AddressBook Database Queries
 
 --UC1
-CREATE DATABASE AddressBookService
+CREATE DATABASE AddressBookServices
 select * from sys.databases
 use AddreeBookService
 --UC2
@@ -32,7 +32,7 @@ update AddressBookTable
 	where FirstName = 'latha' 
 
 	--UC5
-    delete from AddressBookTable 
+    delete from AddressBookTable
 	where FirstName = 'Manu'
 	
 
@@ -41,3 +41,15 @@ update AddressBookTable
 	from AddressBookTable
 	where City = 'Mlk' 
 	OR State = 'aL'
+
+	--UC7
+select COUNT(FirstName) 
+	From AddressBookTable 
+	Where City = 'Mlk' 
+
+select COUNT(City) 
+	From AddressBookTable
+select COUNT(State) 
+	From AddressBookTable 
+	
+	select * from AddressBookTable
